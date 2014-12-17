@@ -21,7 +21,6 @@ namespace LFandUTF8
 			catch (Exception e)
 			{
 				Console.WriteLine("Exception when initializing BinOrNotHelper({0}). Recreating settings.", filename);
-				File.Create(filename);
 				Model = new BinOrNotModel
 				{
 					BinExtensions = new List<string>(),
